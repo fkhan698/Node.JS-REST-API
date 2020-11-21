@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+### 
+GET http://localhost:3000/subscribers/5fb959afa208725b020f9a21
+
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "firstName": "Fuck",
+    "lastName": "You",
+    "phoneNumber": 4173799999,
+    "subscribedToChannel": "BBC News"
+}
+###
+PATCH  http://localhost:3000/subscribers/5fb959afa208725b020f9a21
+Content-Type: application/json
+{
+
+    "phoneNumber": 4173799999,
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+### 
+DELETE  http://localhost:3000/subscribers/5fb959afa208725b020f9a21
